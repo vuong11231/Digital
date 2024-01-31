@@ -4,7 +4,8 @@
 /***************************************************************/
 
 using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
 public class CameraTargetOrientationScript : MonoBehaviour
 {
@@ -47,7 +48,9 @@ public class CameraTargetOrientationScript : MonoBehaviour
     public float zoomSpeedTouch = 0.5f;
     public float panSpeed = 2.0f;
 
-    private Vector3 targetRot;
+    public Vector3 targetRot;
+
+    public LayerMask UILayer;
 
     void Start()
     {
@@ -57,7 +60,11 @@ public class CameraTargetOrientationScript : MonoBehaviour
 
     void LateUpdate()
     {
-#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            Debug.Log("Over UI");
+            return;
+        }
 
         // Rotating camera with RMB dragging on PC.
         if (enableRotation && (Input.GetMouseButton(0)))
@@ -87,6 +94,5 @@ public class CameraTargetOrientationScript : MonoBehaviour
         transform.Translate(0, 0, translate * zoomSpeedMouse * Mathf.Sign(Input.GetAxis("Mouse ScrollWheel")));
 
         _cameraOffset = transform.position - target.position;
-#endif
     }
 }
