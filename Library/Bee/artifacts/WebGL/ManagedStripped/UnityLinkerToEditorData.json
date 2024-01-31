@@ -5,14 +5,26 @@
         "name": "Animation",
         "dependencies": [
           {
+            "name": "AnimationClip",
+            "scenes": [
+              "Assets/Scenes/MainScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "Animator",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/MainScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AnimatorController",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/MainScene.unity"
+            ],
             "dependencyType": 1,
             "icon": null
           },
@@ -20,6 +32,12 @@
             "name": "AnimatorOverrideController",
             "scenes": [],
             "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Motion",
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
@@ -36,7 +54,7 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -50,7 +68,7 @@
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -59,6 +77,18 @@
             "name": "AudioManager",
             "scenes": [],
             "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "AudioMixer",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "AudioSource",
+            "scenes": [],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -87,7 +117,7 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -107,7 +137,7 @@
           {
             "name": "Cubemap",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -127,7 +157,7 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -141,7 +171,7 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -167,7 +197,7 @@
           {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -175,7 +205,7 @@
           {
             "name": "Light",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -195,8 +225,14 @@
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "LineRenderer",
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
@@ -209,7 +245,7 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -217,7 +253,7 @@
           {
             "name": "Mesh",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -225,7 +261,7 @@
           {
             "name": "MeshFilter",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -233,7 +269,7 @@
           {
             "name": "MeshRenderer",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -241,7 +277,7 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -255,7 +291,7 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -263,7 +299,7 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -295,7 +331,7 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -309,7 +345,7 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -341,7 +377,7 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -361,7 +397,7 @@
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -421,6 +457,12 @@
             "icon": null
           },
           {
+            "name": "TrailRenderer",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "Transform",
             "scenes": [],
             "dependencyType": 1,
@@ -461,6 +503,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.physics"
+          },
+          {
+            "name": "Required by Physics2D Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.physics2d"
           },
           {
             "name": "Required by RuntimeInitializeOnLoadManagerInitializer Module",
@@ -575,6 +623,23 @@
         ]
       },
       {
+        "name": "Physics2D",
+        "dependencies": [
+          {
+            "name": "Physics2DSettings",
+            "scenes": [],
+            "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "Rigidbody2D",
+            "scenes": [],
+            "dependencyType": 0,
+            "icon": null
+          }
+        ]
+      },
+      {
         "name": "RuntimeInitializeOnLoadManagerInitializer",
         "dependencies": [
           {
@@ -629,6 +694,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.physics"
+          },
+          {
+            "name": "Required by Physics2D Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.physics2d"
           },
           {
             "name": "Required by RuntimeInitializeOnLoadManagerInitializer Module",
@@ -714,7 +785,7 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -763,7 +834,7 @@
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -777,7 +848,7 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
