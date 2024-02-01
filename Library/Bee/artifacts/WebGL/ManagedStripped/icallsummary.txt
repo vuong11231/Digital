@@ -18,6 +18,9 @@ Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility::EndSample
 Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility::GetCategoryDescription_Injected
 Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility::SetMarkerMetadata__Unmanaged
 Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility::CreateCounterValue__Unmanaged
+UnityEngine.AI.NavMeshAgent::SetDestination_Injected
+UnityEngine.AI.NavMeshAgent::get_pathPending
+UnityEngine.AI.NavMeshAgent::get_remainingDistance
 UnityEngine.AnimationCurve::Internal_Equals
 UnityEngine.AnimationCurve::GetHashCode
 UnityEngine.AnimationCurve::get_length

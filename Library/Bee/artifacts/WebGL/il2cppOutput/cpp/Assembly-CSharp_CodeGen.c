@@ -12,6 +12,10 @@
 
 
 
+extern void AI_navmesh_Start_m0456E04640BDDF0C8EB72FF2AE01E220FF70E77D (void);
+extern void AI_navmesh_Update_mEC3731B9FFDDE6A3CCDA29942666EE77B5499922 (void);
+extern void AI_navmesh_MoveToNextWaypoint_m38C8F073A4662A6FB745A8E571073C56A6D0058A (void);
+extern void AI_navmesh__ctor_mA3A09F965C96D32E552AC4917B1B7C6A6488138E (void);
 extern void BTN_Control_Start_mEEF252D791429C979474879198DAFEF3EDBECE0A (void);
 extern void BTN_Control_Update_m41A9035731A1F73025991434FBCC7CACA9484D33 (void);
 extern void BTN_Control_Click_Start_m8F4B47D82E4FD6C2B3F6426FCA741E3ABBC543EE (void);
@@ -297,8 +301,12 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[294] = 
+static Il2CppMethodPointer s_methodPointers[298] = 
 {
+	AI_navmesh_Start_m0456E04640BDDF0C8EB72FF2AE01E220FF70E77D,
+	AI_navmesh_Update_mEC3731B9FFDDE6A3CCDA29942666EE77B5499922,
+	AI_navmesh_MoveToNextWaypoint_m38C8F073A4662A6FB745A8E571073C56A6D0058A,
+	AI_navmesh__ctor_mA3A09F965C96D32E552AC4917B1B7C6A6488138E,
 	BTN_Control_Start_mEEF252D791429C979474879198DAFEF3EDBECE0A,
 	BTN_Control_Update_m41A9035731A1F73025991434FBCC7CACA9484D33,
 	BTN_Control_Click_Start_m8F4B47D82E4FD6C2B3F6426FCA741E3ABBC543EE,
@@ -594,8 +602,12 @@ static Il2CppMethodPointer s_methodPointers[294] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[294] = 
+static const int32_t s_InvokerIndices[298] = 
 {
+	4650,
+	4650,
+	4650,
+	4650,
 	4650,
 	4650,
 	4650,
@@ -893,8 +905,8 @@ static const int32_t s_InvokerIndices[294] =
 };
 static const Il2CppTokenRangePair s_rgctxIndices[2] = 
 {
-	{ 0x02000007, { 0, 7 } },
-	{ 0x02000008, { 7, 5 } },
+	{ 0x02000008, { 0, 7 } },
+	{ 0x02000009, { 7, 5 } },
 };
 extern const uint32_t g_rgctx_T_t2337B8A22C295A41D129CA0B4B104663AAC37B94;
 extern const uint32_t g_rgctx_Singleton_1_tEB10BC7581192E8DC4004CC6A80E88A3E42C3444;
@@ -927,7 +939,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	294,
+	298,
 	s_methodPointers,
 	0,
 	NULL,
