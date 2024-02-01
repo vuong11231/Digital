@@ -3,18 +3,9 @@ using UnityEngine;
 
 public class LerpCamera : Singleton<LerpCamera>
 {
-    [SerializeField] private Transform cameraTr;
-
-    Vector3 initCamearPos;
-
-    private void Start()
+    public void LerpTo(Transform target, float duration)
     {
-        initCamearPos = cameraTr.localPosition;
-    }
-
-    public void LerpTo(Vector3 newPos, float duration)
-    {
-        transform.DOMove(newPos, duration);
-        cameraTr.DOLocalMove(initCamearPos, duration);
+        transform.DOMove(target.position, duration);
+        transform.DOLookAt(target.forward, duration);
     }
 }

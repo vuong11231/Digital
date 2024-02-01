@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ButtonLerp : MonoBehaviour
 {
-    [SerializeField] Vector3 targetPosition;
+    [SerializeField] Transform targetPosition;
     [SerializeField] float duration;
 
     private void Start()
