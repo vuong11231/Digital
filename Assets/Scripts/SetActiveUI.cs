@@ -3,7 +3,7 @@
 public class UIManager : MonoBehaviour
 {
     public GameObject[] uiElements;
-
+    public bool activeUI = false;
     void Start()
     {
         // Đảm bảo rằng các UI Elements đã được gán trong Inspector
@@ -16,13 +16,16 @@ public class UIManager : MonoBehaviour
     // Mở UI Element cụ thể
     public void OpenUIElement(int index)
     {
-        if (index >= 0 && index < uiElements.Length)
+        if (index >= 0 && index < uiElements.Length && activeUI == false)
         {
             uiElements[index].SetActive(true);
+            activeUI = true;
         }
         else
         {
-            Debug.LogError("Invalid UI Element index: " + index);
+            uiElements[index].SetActive(false);
+            activeUI = false;
+            //Debug.LogError("Invalid UI Element index: " + index);
         }
     }
 
@@ -38,4 +41,5 @@ public class UIManager : MonoBehaviour
             Debug.LogError("Invalid UI Element index: " + index);
         }
     }
+   
 }
