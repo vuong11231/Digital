@@ -3,6 +3,7 @@
 //                        (c) 2019 Sergey Stafeyev                           //
 //===========================================================================//
 
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -79,6 +80,8 @@ public class FreeFlyCamera : MonoBehaviour
     [Tooltip("This keypress will move the camera to initialization position")]
     private KeyCode _initPositonButton = KeyCode.R;
 
+    private Vector3 currentTarget;
+
     #endregion UI
 
     private CursorLockMode _wantedMode;
@@ -89,6 +92,8 @@ public class FreeFlyCamera : MonoBehaviour
     private Vector3 _initPosition;
     private Vector3 _initRotation;
 
+    public bool Active;
+
 #if UNITY_EDITOR
     private void OnValidate()
     {
@@ -97,36 +102,10 @@ public class FreeFlyCamera : MonoBehaviour
     }
 #endif
 
-
     private void Start()
     {
         _initPosition = transform.position;
         _initRotation = transform.eulerAngles;
-    }
-
-    private void OnEnable()
-    {
-        //if (_active)
-        //    _wantedMode = CursorLockMode.Locked;
-    }
-
-    // Apply requested cursor state
-    private void SetCursorState()
-    {
-        //if (Input.GetKeyDown(KeyCode.Escape))
-        //{
-        //    Cursor.lockState = _wantedMode = CursorLockMode.None;
-        //}
-
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    _wantedMode = CursorLockMode.Locked;
-        //}
-
-        //// Apply cursor state
-        //Cursor.lockState = _wantedMode;
-        //// Hide cursor when locking
-        //Cursor.visible = (CursorLockMode.Locked != _wantedMode);
     }
 
     private void CalculateCurrentIncrease(bool moving)
@@ -145,6 +124,9 @@ public class FreeFlyCamera : MonoBehaviour
 
     private void Update()
     {
+        if (!Active)
+            return;
+
         if (!_active)
             return;
 
@@ -187,23 +169,6 @@ public class FreeFlyCamera : MonoBehaviour
             CalculateCurrentIncrease(deltaPosition != Vector3.zero);
 
             transform.position += deltaPosition * currentSpeed * _currentIncrease;
-        }
-
-        // Rotation
-        if (_enableRotation && Input.GetMouseButton(0) && !EventSystem.current.IsPointerOverGameObject())
-        {
-            // Pitch
-            transform.rotation *= Quaternion.AngleAxis(
-                -Input.GetAxis("Mouse Y") * _mouseSense,
-                Vector3.right
-            );
-
-            // Paw
-            transform.rotation = Quaternion.Euler(
-                transform.eulerAngles.x,
-                transform.eulerAngles.y + Input.GetAxis("Mouse X") * _mouseSense,
-                transform.eulerAngles.z
-            );
         }
 
         // Return to init position
